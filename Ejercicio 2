@@ -1,0 +1,6 @@
+En C++, cuando sumas dos caracteres, lo que sucede es que se realiza una operación aritmética en la que se suman los valores numéricos de los 
+caracteres de acuerdo con la tabla ASCII. Por ejemplo, 
+si sumas los caracteres 'a' y 'b', cuyos valores ASCII son 97 y 98 respectivamente, obtendrás un 
+resultado numérico que corresponde
+a la suma de estos valores, en este caso, 195.
+Al ejecutar este programa, verás que el resultado de sumar los caracteres 'a' y 'b' será mostrado en la consola.
