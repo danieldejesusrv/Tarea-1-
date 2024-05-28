@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int minutos, segundos;
+
+    while (true) {
+        cout << "\nIngresa el tiempo del corredor en minutos y segundos (ejemplo: 3 53): ";
+        cin >> minutos >> segundos;
+
+        if (minutos == 0 && segundos == 0) {
+            cout << "Fin de la entrada de datos";
+            break;
+        }
+
+        double tiempoTotal = minutos * 60 + segundos; // Convertir todo a segundos
+        double velocidad = 1500 / tiempoTotal; // Calcular la velocidad en m/s
+
+        cout << "\nTiempo del corredor: " << minutos << " minutos y " << segundos << " segundos" << endl;
+        cout << "Velocidad media: " << velocidad << " m/s" << endl;
+    }
+
+    return 0;
+}
