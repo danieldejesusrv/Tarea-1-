@@ -1,0 +1,5 @@
+Los atributos o características de los objetos en programación orientada a objetos (POO) son variables que pertenecen a una clase y definen las propiedades que describen el estado de un objeto.
+En Java, por ejemplo, los atributos son conocidos como campos o variables de instancia. Cada objeto creado a partir de una clase tiene su propio conjunto individual de atributos que determinan 
+su estado en un momento dado. Estos atributos pueden contener diferentes tipos de datos, como números, texto, booleanos u otros objetos, y representan las características únicas de cada objeto. 
+
+Los atributos son fundamentales para modelar y estructurar los datos de manera efectiva en la programación orientada a objetos
