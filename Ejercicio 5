@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double salarioHora, horasDiarias, salarioSemanal;
+    int diasSemana = 5; // Suponemos que trabaja de lunes a viernes
+
+    cout << "\nIngresa el salario por hora: ";
+    cin >> salarioHora;
+
+    cout << "\nIngresa el número de horas trabajadas diariamente: ";
+    cin >> horasDiarias;
+
+    salarioSemanal = salarioHora * horasDiarias * diasSemana;
+
+    cout << "\nEl salario semanal del trabajador es: $" << salarioSemanal << endl;
+
+    return 0;
+}
