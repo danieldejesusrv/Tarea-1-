@@ -1,0 +1,103 @@
+mermaid
+classDiagram
+    class Coche {
+        +Chasis chasis
+        +Motor motor
+        +Transmision transmision
+        +SistemaDireccion sistemaDireccion
+        +SistemaFrenos sistemaFrenos
+        +SistemaSuspension sistemaSuspension
+        +Ruedas ruedas
+    }
+
+    class Chasis {
+        +Carroceria carroceria
+        +Bastidor bastidor
+    }
+
+    class Carroceria {
+        +Pintura pintura
+        +Parachoques parachoques
+        +Puertas puertas
+        +Ventanas ventanas
+    }
+
+    class Bastidor {
+        +Largueros largueros
+        +Travesanos travesanos
+    }
+
+    class Motor {
+        +Cilindros cilindros
+        +Pistones pistones
+        +ArbolLevas arbolLevas
+        +Carburador carburador
+        +Bujias bujias
+    }
+
+    class Transmision {
+        +CajaCambios cajaCambios
+        +Embrague embrague
+        +EjeTransmision ejeTransmision
+        +DiferencialDelantero diferencialDelantero
+        +DiferencialTrasero diferencialTrasero
+    }
+
+    class SistemaDireccion {
+        +Volante volante
+        +BarraDireccion barraDireccion
+        +CremalleraDireccion cremalleraDireccion
+        +BrazosDirectores brazosDirectores
+    }
+
+    class SistemaFrenos {
+        +PedalFreno pedalFreno
+        +DiscosFreno discosFreno
+        +PinzasFreno pinzasFreno
+        +CilindroMaestro cilindroMaestro
+        +CilindrosRueda cilindrosRueda
+    }
+
+    class SistemaSuspension {
+        +Amortiguadores amortiguadores
+        +Resortes resortes
+        +BrazosSuspension brazosSuspension
+        +BielasBarraTorsion bielasBarraTorsion
+    }
+
+    class Ruedas {
+        +Llantas llantas
+        +Neumaticos neumaticos
+        +TornillosRueda tornillosRueda
+    }
+
+    Coche  =Chasis
+    Coche = Motor
+    Coche = Transmision
+    Coche = SistemaDireccion
+    Coche = SistemaFrenos
+    Coche = SistemaSuspension
+    Coche = Ruedas
+
+    Chasis = Carroceria
+    Chasis =Bastidor
+
+    Carroceria = Pintura
+    Carroceria = Parachoques
+    Carroceria = Puertas
+    Carroceria = Ventanas
+
+    Bastidor = Largueros
+    Bastidor = Travesanos
+
+    Motor = Cilindros
+    Motor = Pistones
+    Motor = ArbolLevas
+    Motor = Carburador
+    Motor = Bujias
+
+    Transmision =CajaCambios
+    Transmision = Embrague
+    Transmision = EjeTransmision
+    Transmision = DiferencialDelantero
+    Transmision = DiferencialTrasero
