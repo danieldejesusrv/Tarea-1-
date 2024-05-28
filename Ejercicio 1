@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double num1, num2;
+    double sum, diff, product;
+
+    cout << "\nIngresa el primer número: ";
+    cin >> num1;
+
+    cout << "\nIngresa el segundo número: ";
+    cin >> num2;
+
+    sum = num1 + num2;
+    diff = num1 - num2;
+    product = num1 * num2;
+
+    cout <<"\nLa suma de " << num1 << " y " << num2 << " es: " << sum << endl;
+    cout << "La resta de " << num1 << " y " << num2 << " es: " << diff << endl;
+    cout << "La multiplicación de " << num1 << " y " << num2 << " es: " << product << endl;
+
+    return 0;
+}
