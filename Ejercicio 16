@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double centimeters, inches;
+    const double Convercion= 2.54;
+
+    cout << "Ingrese la medida en centímetros: ";
+    cin >> centimeters;
+    
+    inches = centimeters / Convercion;
+    cout.precision(3);
+    
+    cout << centimeters << " centímetros son " << inches << " pulgadas." << endl;
+    
+    return 0;
+}
