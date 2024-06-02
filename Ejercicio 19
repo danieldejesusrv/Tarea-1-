@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int sumDigits(int number) {
+    int sum = 0;
+    while (number != 0) {
+        sum += number % 10;
+        number /= 10;
+    }
+    return sum;
+}
+
+int main() {
+    int num;
+    cout << "Ingrese un número: ";
+    cin >> num;
+
+    int sum = sumDigits(num);
+
+    cout << "\nLa suma de los dígitos de " << num << " es: " << sum << endl;
+
+    return 0;
+}
