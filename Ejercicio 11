@@ -1,0 +1,39 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std ;
+
+int main() {
+    // Leer los dos números
+    double num1, num2;
+    cout << "Introduce el primer número: ";
+    cin >> num1;
+    cout << "Introduce el segundo número: ";
+    cin >> num2;
+
+    // Mostrar la suma
+    double suma = num1 + num2;
+    cout << "\nLa suma de " << num1 << " y " << num2 << " es " << suma << endl;
+
+    // Mostrar la resta
+    double resta = num1 - num2;
+    cout << "La resta de " << num1 << " y " << num2 << " es " << resta << endl;
+
+    // Mostrar la multiplicación
+    double multiplicacion = num1 * num2;
+    cout << "La multiplicación de " << num1 << " y " << num2 << " es " << multiplicacion << endl;
+
+    // Mostrar la división 
+    if (num2 != 0) {
+        double division = num1 / num2;
+        cout << "La división de " << num1 << " entre " << num2 << " es " << division << endl;
+    } else {
+        cout << "No se puede dividir entre cero" << endl;
+    }
+
+    // Mostrar el resto (módulo)
+    double resto = fmod(num1, num2);
+    cout << "El resto de la división de " << num1 << " entre " << num2 << " es " << resto << endl;
+
+    return 0;
+}
