@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double horas, valor, salario;
+
+    cout << "\nIngrese el número de horas trabajadas: ";
+    cin >> horas;
+
+    cout << "\nIngrese el valor por hora: ";
+    cin >> valor;
+
+    salario = horas * valor;
+
+    cout << "\nEl salario es: $" << salario << endl;
+
+    return 0;
+}
