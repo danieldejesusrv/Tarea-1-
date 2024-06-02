@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double num1, num2, num3;
+    double sum, product;
+
+    cout << "Ingrese el primer número: ";
+    cin >> num1;
+
+    cout << "Ingrese el segundo número: ";
+    cin >> num2;
+
+    cout << "Ingrese el tercer número: ";
+    cin >> num3;
+
+    sum = num1 + num2 + num3;
+    product = num1 * num2 * num3;
+
+    cout << "\nLa suma de los tres números es: " << sum << endl;
+    cout << "La multiplicación de los tres números es: " << product << endl;
+
+    return 0;
+}
