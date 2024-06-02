@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double side, area;
+
+    cout << "Ingrese la longitud del lado del cuadrado: ";
+    cin >> side;
+
+    area = side * side;
+
+    cout << "\nEl área del cuadrado es: " << area << endl;
+
+    return 0;
+}
