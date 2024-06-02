@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+void convertTime(int seconds) {
+    int hours, minutes, secondsLeft;
+
+    hours = seconds / 3600;
+    secondsLeft = seconds % 3600;
+    minutes = secondsLeft / 60;
+    secondsLeft = secondsLeft % 60;
+
+    cout << hours << " horas, " << minutes << " minutos y " << secondsLeft << " segundos." << endl;
+}
+
+int main() {
+    int seconds;
+    cout << "Ingrese el tiempo en segundos: ";
+    cin >> seconds;
+
+    convertTime(seconds);
+
+    return 0;
+
+}
