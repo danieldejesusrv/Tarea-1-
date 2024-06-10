@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int salario; // Sueldo del trabajador
+    float descuento; // Descuento
+    float  suelneto; //sueldo neto
+
+    cout << "Ingrese el sueldo del trabajador: ";
+    cin >> salario;
+
+    // Calcular el descuento según el sueldo
+    if (salario <= 1000) {
+        descuento = salario * 0.1;
+    } else if (salario <= 2000) {
+        descuento = (salario - 1000) * 0.05 + 1000 * 0.1;
+    } else {
+        descuento = (salario - 2000) * 0.03 + 1000 * 0.1 + 1000 * 0.1;
+    }
+
+    // Calcular el sueldo neto
+    suelneto = salario - descuento;
+
+    // Mostrar el descuento y el sueldo neto
+    cout << "Descuento: " << descuento << endl;
+    cout << "Sueldo neto: " << suelneto << endl;
+
+    return 0;
+}
