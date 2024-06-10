@@ -1,0 +1,30 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    float voltaje1, voltaje2, voltaje3, voltaje4, voltaje5, promedio;
+
+    cout << "\nIngresar el primer voltaje: ";
+    cin >> voltaje1;
+    cout << "\nIngresar el segundo voltaje: ";
+    cin >> voltaje2;
+    cout << "\nIngresar el tercer voltaje: ";
+    cin >> voltaje3;
+    cout << "\nIngresar el cuarto voltaje: ";
+    cin >> voltaje4;
+    cout << "\nIngresar el quinto voltaje: ";
+    cin >> voltaje5;
+
+    // Calcular el promedio
+    promedio = (voltaje1 + voltaje2 + voltaje3 + voltaje4 + voltaje5) / 5.0;
+
+    // Evaluar si el promedio es mayor a 220
+    if (promedio > 220) {
+        cout << "\nALTO VOLTAJE" << endl;
+    } else {
+        cout << "\nVOLTAJE CORRECTO" << endl;
+    }
+
+    return 0;
+}
