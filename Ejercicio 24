@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+ int main(){
+ 
+    int entero;
+    float real;
+    
+    cout <<"ingrese un número entero :";
+    cin >>entero;
+    
+    cout <<"ingrese un número real :";
+    cin >>real;
+    
+    cout<<"\nnúmero entero ingresado :" << entero <<endl;
+    cout<<"número real ingresado :" << real <<endl;
+    
+ 
+  return 0;
+ }
