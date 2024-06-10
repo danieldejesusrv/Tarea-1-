@@ -1,0 +1,18 @@
+#include <iostream>
+ using namespace std;
+ 
+void Voltaje() {
+    double vol = 120; // Voltaje del bombillo
+    double total = vol * 3; // Voltaje total de los tres bombillos
+    double kV = total / 1000; // Voltaje en kilovoltios
+
+    cout << "\nEl voltaje total de los tres bombillos es: " << kV << "\nkV" << endl;
+}
+
+int main() {
+    cout << "Calculo del voltaje de 3 bombillas" << endl;
+    Voltaje();
+    cout << endl;
+ 
+   return 0;
+ }
