@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    float num1, num2, num3, promedio;
+
+    cout << "Ingresar el primer número: ";
+    cin >> num1;
+    cout << "Ingresar el segundo número: ";
+    cin >> num2;
+    cout << "Ingresar el tercer número: ";
+    cin >> num3;
+
+    promedio = (num1 + num2 + num3) / 3.0;
+
+    // Evaluar si el promedio es mayor a 7
+    if (promedio > 7) {
+        cout << "\nAPROBADO" << endl;
+    } else {
+        cout << "\nMEJORE LA NOTA" << endl;
+    }
+
+    return 0;
+}
