@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double monto;
+    double descuento;
+
+    cout << "Ingrese el monto: ";
+    cin >> monto;
+
+    if (monto > 10000) {
+        descuento = monto * 0.2;
+    } else {
+        descuento = monto * 0.1;
+    }
+
+    cout << "El descuento es: " << descuento << endl;
+
+    return 0;
+}
